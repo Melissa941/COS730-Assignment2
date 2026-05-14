@@ -16,9 +16,7 @@ public class SubmissionService {
     @Autowired private ReviewerService reviewerService;
     @Autowired private ReviewerAssignmentService reviewerAssignmentService;
     @Autowired private FinalDecisionService finalDecisionService;
-    @Autowired private NotificationService notificationService;
     @Autowired private SubmissionRepository submissionRepository;
-    @Autowired private ReviewRepository reviewRepository;
 
 
     public String submitForReview(Submission submission){

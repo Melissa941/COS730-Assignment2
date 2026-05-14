@@ -31,9 +31,6 @@ public class Submission {
     @Column(name = "conclusion")
     private boolean conclusion;
 
-    @Column(name = "references")
-    private boolean references;
-
     @Column(name = "reviewer_name")
     private String reviewerName;
 

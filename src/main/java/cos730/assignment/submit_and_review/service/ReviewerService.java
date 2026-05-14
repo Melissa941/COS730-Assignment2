@@ -30,7 +30,7 @@ public class ReviewerService {
             Review reviewer = reviews.get(i);
             sum = sum + reviews.get(i).getScore();
         }
-        Integer average = sum%reviews.size();
+        Integer average = sum/reviews.size();
 
         return average >= 3;
     }

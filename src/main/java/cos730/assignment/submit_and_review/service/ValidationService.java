@@ -12,7 +12,7 @@ public class ValidationService {
         validationResponse.setValidFormat(false);
         //Checking all the validations/requirements for the submissions
         if(submission.isIntroduction() && submission.isLiteratureReview() &&
-                submission.isConclusion() && submission.isReferences()){
+                submission.isConclusion()){
             validationResponse.setValidFormat(true);
         }else{
             //invalid format exception
