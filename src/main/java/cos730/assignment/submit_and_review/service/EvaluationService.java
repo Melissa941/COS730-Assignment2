@@ -18,11 +18,13 @@ public class EvaluationService {
         reviewRepository.saveAll(reviews);
 
         int sum = 0;
+        //Save score
         for (int i = 0; i < reviews.size(); i++) {
+
             Review reviewer = reviews.get(i);
             sum = sum + reviews.get(i).getScore();
         }
-        int average = sum%reviews.size();
+        int average = sum/reviews.size();
 
         return average >= 3;
     }

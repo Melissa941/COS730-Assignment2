@@ -30,19 +30,4 @@ public class Submission {
 
     @Column(name = "conclusion")
     private boolean conclusion;
-
-    @Column(name = "references")
-    private boolean references;
-
-    @Column(name = "reviewer_name")
-    private String reviewerName;
-
-    @Column(name = "evaluation_score")
-    private Integer evaluationScore;
-
-    @Column(name = "evaluation_result")
-    private String evaluationResult;
-
-    @Column(name = "final_outcome")
-    private String finalOutcome;
 }

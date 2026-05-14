@@ -18,6 +18,7 @@ public class ReviewerService {
 
             Review review = new Review();
             Reviewer reviewer = reviewers.get(i);
+            //check availability of reviewer
             if(reviewers.get(i).getAvailable() ){
                 review.setScore(3);
                 review.setSubmissionId(submission.getId());

@@ -25,7 +25,7 @@ public class SubmissionService {
 
         boolean valid = validationService.validate(submission);
         if(!valid){
-            return "Invalid Format";
+            return "Invalid submission Format";
         }
 
         //save the submission data to DB
