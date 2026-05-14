@@ -17,13 +17,12 @@ public class EvaluationService {
         //saving multiple reviews
         reviewRepository.saveAll(reviews);
 
-        //TODO: calculate average
-        var sum = 0;
+        int sum = 0;
         for (int i = 0; i < reviews.size(); i++) {
             Review reviewer = reviews.get(i);
             sum = sum + reviews.get(i).getScore();
         }
-        var average = sum%reviews.size();
+        int average = sum%reviews.size();
 
         return average >= 3;
     }

@@ -17,7 +17,6 @@ public class ReviewerService {
         for (int i = 0; i < reviewers.size(); i++) {
 
             Review review = new Review();
-            //TODO: assign review - add more conditions
             Reviewer reviewer = reviewers.get(i);
             if(reviewers.get(i).getAvailable() ){
                 review.setScore(3);
